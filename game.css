@@ -7,7 +7,31 @@
   a {
     text-decoration: none;
   }
-  
+  #startGame{
+    padding:10px 30px;
+    background-color:rgb(249, 239, 239);
+    color:rgb(21, 20, 20);
+    border-radius:10px;
+    font-size:20px;
+    font-weight: 500;
+    border: none;
+  }
+  #center{
+    color:white;
+    font-size:25px;
+  }
+  .screen1{
+      background-image:url("images/outer-space-planet-2d-background-environment-mobile-game-high-quality-horizontal-background-landscape-gaming-template-design-location-generative-ai_159242-19329.avif");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+  }
+  .screen2{
+    background-image:url("images/outer-space-planet-2d-background-environment-mobile-game-high-quality-horizontal-background-landscape-gaming-template-design-location-generative-ai_159242-19329.avif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
   .screen {
     display: flex;
     flex-direction: column;
@@ -21,8 +45,23 @@
     align-items: center;
     justify-content: center;
     padding: 3rem;
+    background-image:url("images/outer-space-planet-2d-background-environment-mobile-game-high-quality-horizontal-background-landscape-gaming-template-design-location-generative-ai_159242-19329.avif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   }
-  
+  .timer{
+    color:white;
+    font-size:20px;
+  }
+  h5{
+    font-size:20px;
+    color:white;
+  }
+  .score{
+    color:white;
+    font-size:20px;
+  }
   .gayab {
     display: none;
     /* opacity: 0; */

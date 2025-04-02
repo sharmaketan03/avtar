@@ -21,6 +21,7 @@ startgame.addEventListener("click", () => {
   let screen3 = document.querySelector(".screen3");
   let body = document.body;
   // console.log(body);
+
   screen1.classList.add("gayab");
   screen2.classList.remove("gayab");
   
@@ -34,6 +35,7 @@ startgame.addEventListener("click", () => {
       screen3.classList.remove("gayab");
       screen2.classList.add("gayab");
       selectedAvatar= avatar1[i];
+
       // console.log(selectedAvatar)
     //  setInterval(timeadd,1000)  
     imageInterval=setInterval(generateImage,1000);
@@ -51,10 +53,13 @@ function generateImage(){
   images.style.top=getARandomNumber("y")+"px"
   // images.style.left = "20px"
 
-  console.log(getARandomNumber());
-  if(sum>30){
+  // console.log(getARandomNumber());
+  if(sum>=30){
+
+    alert(`Time's up final score is ${score}`)
        clearInterval(imageInterval)
-      alert(`Time's up final score is ${score}`)
+      
+      
   }
   else{
     sum=sum+1
@@ -67,10 +72,12 @@ function generateImage(){
   images.addEventListener("click",()=>{
     score +=1;
     scored.innerText=score
+
     images.remove()  
 })
   imagearea.append(images) 
 }
+
 });
 
 function getARandomNumber(axis) {
@@ -78,12 +85,16 @@ function getARandomNumber(axis) {
   const ran = Math.floor(Math.random() * 1440);
   // console.log(ran);
   if (axis === "x") {
+
+   
       if (ran < 50 || ran > 1400) return getARandomNumber(axis)
       else return ran
+     
   }
   else {
       if (ran < 50 || ran > 380) return getARandomNumber(axis)
       else return ran
   }
 }
+
 
