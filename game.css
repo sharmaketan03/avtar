@@ -143,6 +143,11 @@
     left:0;
     width:100vw;
   }
+  #mainboard{
+    font-size: 30px;
+    color:rgb(252, 231, 225);
+    margin-top:5rem;
+  }
 
   .objectimg{
     width:80px;
